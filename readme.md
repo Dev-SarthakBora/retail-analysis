@@ -4,12 +4,6 @@ This project focuses on analyzing the sales data of a retail chain to identify p
 
 ---
 
-## 🚀 Demo Link
-If hosted on Power BI Service, Tableau Public, or any dashboard platform — provide the link here.  
-**Example:** [Retail Sales Dashboard Demo](#)
-
----
-
 ## 📚 Table of Contents
 1. [Business Understanding](#business-understanding)  
 2. [Data Understanding](#data-understanding)  
@@ -38,7 +32,7 @@ The dataset used in this project contains transactional data from multiple retai
 - **Order ID, Order Date, Ship Date**  
 - **Customer and Region Information**  
 - **Product Category and Sub-Category**  
-- **Sales, Profit, Quantity, and Discount**
+- **Sales, Profit, Quantity**
 
 The data was chosen because it provides a holistic view of business operations across different dimensions—time, location, and customers.  
 
