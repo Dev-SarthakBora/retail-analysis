@@ -44,7 +44,7 @@ The data was chosen because it provides a holistic view of business operations a
 ---
 
 ## 🖼️ Screenshots of Visualizations/Results
-![Dashboard Overview](assets/screenshot.jpg)
+![Dashboard Overview](Screenshot.png)
 
 Examples:
 - 📈 Monthly and quarterly profit charts  
