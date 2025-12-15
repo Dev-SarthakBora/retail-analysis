@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retail Sales Analysis | Project Submission</title>
+
+<style>
+:root{
+  --bg:#020617;
+  --card:#111827;
+  --accent:#38bdf8;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+}
+
+*{
+  box-sizing:border-box;
+  font-family:Segoe UI,system-ui,sans-serif;
+}
+
+body{
+  margin:0;
+  background:linear-gradient(120deg,#020617,#0f172a);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:2rem 1.2rem;
+}
+
+section{
+  margin-bottom:3.5rem;
+  animation:fadeUp .8s ease both;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:none}
+}
+
+.hero{
+  text-align:center;
+  padding:3.5rem 1rem;
+}
+
+.hero h1{
+  font-size:2.6rem;
+}
+
+.hero span{color:var(--accent)}
+
+.hero p{
+  color:var(--muted);
+  max-width:760px;
+  margin:auto;
+}
+
+.card{
+  background:var(--card);
+  padding:1.6rem;
+  border-radius:14px;
+  box-shadow:0 0 0 1px rgba(255,255,255,.06);
+}
+
+h2{
+  border-left:4px solid var(--accent);
+  padding-left:.6rem;
+  margin-bottom:1rem;
+}
+
+.grid{
+  display:grid;
+  gap:1.4rem;
+}
+
+.grid-2{
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+.placeholder{
+  height:220px;
+  border:2px dashed rgba(255,255,255,.15);
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted);
+  text-align:center;
+}
+
+ul{padding-left:1.2rem}
+
+.footer{
+  text-align:center;
+  padding:2rem;
+  border-top:1px solid rgba(255,255,255,.1);
+  color:var(--muted);
+}
+
+.footer span{color:var(--accent)}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Retail <span>Sales Analysis</span></h1>
+  <p>
+    A data analytics project focused on uncovering sales patterns, profit trends,
+    regional performance, and high-value customers to support data-driven retail decisions.
+  </p>
+</section>
+
+<!-- BUSINESS UNDERSTANDING -->
+<section>
+  <h2>🧠 Business Understanding</h2>
+  <div class="card">
+    This project aims to analyze retail sales data to identify performance drivers,
+    sales spikes, and profitability patterns across time, regions, and customers.
+    The insights help management improve sales strategies and operational decisions.
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section>
+  <h2>🎯 Key Objectives</h2>
+  <div class="card">
+    <ul>
+      <li>Identify monthly and quarterly sales spikes</li>
+      <li>Analyze quarterly sales and profit performance</li>
+      <li>Evaluate profit distribution across regions</li>
+      <li>Identify top customers contributing maximum revenue</li>
+    </ul>
+  </div>
+</section>
+
+<!-- DATA UNDERSTANDING -->
+<section>
+  <h2>📊 Data Understanding</h2>
+  <div class="card">
+    The dataset contains transactional data from multiple retail stores, including:
+    <ul>
+      <li>Order ID, Order Date, Ship Date</li>
+      <li>Customer and Region details</li>
+      <li>Product Category and Sub-Category</li>
+      <li>Sales, Profit, Quantity</li>
+    </ul>
+    This structure enables time-based, customer-level, and regional performance analysis.
+  </div>
+</section>
+
+<!-- VISUALIZATIONS -->
+<section>
+  <h2>🖼 Visualizations & Results</h2>
+  <div class="grid grid-2">
+    <div class="placeholder">
+      Monthly & Quarterly Profit Charts<br>(Insert dashboard screenshot)
+    </div>
+    <div class="placeholder">
+      Regional Sales & Profit Heatmap<br>(Insert dashboard screenshot)
+    </div>
+    <div class="placeholder">
+      Top 10 Customers by Revenue<br>(Insert chart screenshot)
+    </div>
+    <div class="placeholder">
+      Sales Trend Lines & Spikes<br>(Insert chart screenshot)
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGIES -->
+<section>
+  <h2>🧰 Technologies Used</h2>
+  <div class="grid grid-2">
+    <div class="card">Power BI / Tableau<br><small>Data Visualization</small></div>
+    <div class="card">Excel / CSV<br><small>Data Storage & Cleaning</small></div>
+    <div class="card">Python (Pandas, NumPy, Matplotlib)<br><small>EDA & Analysis</small></div>
+    <div class="card">SQL<br><small>Querying & Data Extraction</small></div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section>
+  <h2>🧩 Approach</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Data Collection:</strong> Retail transactional data from multiple stores</li>
+      <li><strong>Data Cleaning:</strong> Removed missing values, standardized dates, fixed outliers</li>
+      <li><strong>Data Processing:</strong> Created derived fields like profit margin and quarter</li>
+      <li><strong>EDA:</strong> Identified trends, seasonal patterns, and spikes</li>
+      <li><strong>Visualization:</strong> Dashboards highlighting key business insights</li>
+      <li><strong>Interpretation:</strong> Actionable insights for decision-making</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FUTURE ENHANCEMENTS -->
+<section>
+  <h2>🚀 Future Enhancements</h2>
+  <div class="card">
+    <ul>
+      <li>Customer segmentation using demographic data</li>
+      <li>Sales forecasting using time-series models</li>
+      <li>Inventory turnover and demand analysis</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+<div class="footer">
+  Project by <span>Sarthak Bora</span> • Retail Data Analytics
+</div>
+</body>
+</html>
