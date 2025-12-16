@@ -93,7 +93,6 @@ h2{
   text-align:center;
 }
 
-/* Dashboard Preview */
 .grid-2 img{
   width:100%;
   height:160px;
@@ -109,7 +108,9 @@ h2{
   transition:.25s ease;
 }
 
-/* ========== MODAL ========== */
+ul{padding-left:1.2rem}
+
+/* MODAL */
 .modal{
   position:fixed;
   inset:0;
@@ -145,18 +146,62 @@ h2{
 <body>
 <div class="container">
 
+<!-- HERO -->
 <section class="hero">
   <h1>Retail <span>Sales Analysis</span></h1>
   <p>
-    A data analytics project focused on uncovering sales patterns, profit trends,
-    regional performance, and high-value customers.
+    A comprehensive data analytics project focused on identifying sales trends,
+    regional performance, customer behavior, and profitability drivers to support
+    data-driven retail decision-making.
   </p>
 </section>
 
+<!-- PROBLEM STATEMENT -->
 <section>
-  <h2>🖼 Visualizations & Results</h2>
+  <h2>📌 Problem Statement</h2>
+  <div class="card">
+    Retail businesses generate large volumes of transactional data, but without
+    structured analysis, it becomes difficult to identify trends, high-performing
+    regions, and valuable customers.  
+    This project aims to transform raw retail sales data into actionable insights
+    using data analytics and visualization techniques.
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section>
+  <h2>🎯 Objectives</h2>
+  <div class="card">
+    <ul>
+      <li>Analyze monthly and quarterly sales performance</li>
+      <li>Identify high-revenue and high-profit regions</li>
+      <li>Determine top customers contributing to revenue</li>
+      <li>Understand payment behavior and sales trends</li>
+    </ul>
+  </div>
+</section>
+
+<!-- DATA UNDERSTANDING -->
+<section>
+  <h2>📊 Data Understanding</h2>
+  <div class="card">
+    The dataset consists of retail transactional data containing:
+    <ul>
+      <li>Order ID, Order Date, Ship Date</li>
+      <li>Customer Name and Region</li>
+      <li>Product Category and Sub-Category</li>
+      <li>Sales Amount, Profit, Quantity</li>
+      <li>Payment Mode information</li>
+    </ul>
+  </div>
+</section>
+
+<!-- VISUALIZATIONS -->
+<section>
+  <h2>🖼 Visualizations & Insights</h2>
 
   <div class="grid grid-2">
+
     <div onclick="openModal(this)">
       <h3>Overall Sales Dashboard</h3>
       <img src="images/OverallDashboard.png" alt="">
@@ -178,14 +223,65 @@ h2{
     </div>
 
     <div onclick="openModal(this)">
-      <h3>Sales Trends</h3>
+      <h3>Sales Trends Over Time</h3>
       <img src="images/salesTrends.png" alt="">
     </div>
 
     <div onclick="openModal(this)">
-      <h3>Payment Category</h3>
+      <h3>Payment Category Distribution</h3>
       <img src="images/PaymentCategory.png" alt="">
     </div>
+
+  </div>
+</section>
+
+<!-- KEY INSIGHTS -->
+<section>
+  <h2>💡 Key Insights</h2>
+  <div class="card">
+    <ul>
+      <li>Certain regions consistently outperform others in terms of sales and profit</li>
+      <li>A small group of customers contributes a significant portion of revenue</li>
+      <li>Sales show clear seasonal and monthly trends</li>
+      <li>Digital payment methods dominate transaction volume</li>
+    </ul>
+  </div>
+</section>
+
+<!-- TECHNOLOGIES -->
+<section>
+  <h2>🧰 Technologies Used</h2>
+  <div class="grid grid-2">
+    <div class="card">Power BI / Tableau – Visualization</div>
+    <div class="card">Python (Pandas, NumPy) – Data Analysis</div>
+    <div class="card">SQL – Data Querying</div>
+    <div class="card">Excel / CSV – Data Storage</div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section>
+  <h2>🧩 Methodology</h2>
+  <div class="card">
+    <ul>
+      <li>Data collection and cleaning</li>
+      <li>Exploratory Data Analysis (EDA)</li>
+      <li>Feature engineering and aggregation</li>
+      <li>Dashboard creation and interpretation</li>
+      <li>Insight generation for business decisions</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FUTURE -->
+<section>
+  <h2>🚀 Future Scope</h2>
+  <div class="card">
+    <ul>
+      <li>Customer segmentation and clustering</li>
+      <li>Sales forecasting using time-series models</li>
+      <li>Inventory and demand optimization</li>
+    </ul>
   </div>
 </section>
 
@@ -197,15 +293,14 @@ h2{
 </div>
 
 <div class="footer">
-  Project by <span>Sarthak Bora</span> • Retail Data Analytics
+  Project by <span>Sarthak Bora</span> • Retail Sales Analysis
 </div>
 
 <script>
 function openModal(card){
   const img = card.querySelector("img");
   const modal = document.getElementById("modal");
-  const modalImg = document.getElementById("modalImg");
-  modalImg.src = img.src;
+  document.getElementById("modalImg").src = img.src;
   modal.classList.add("show");
 }
 
@@ -214,7 +309,7 @@ function closeModal(){
 }
 
 document.addEventListener("keydown", e=>{
-  if(e.key==="Escape") closeModal();
+  if(e.key === "Escape") closeModal();
 });
 </script>
 
