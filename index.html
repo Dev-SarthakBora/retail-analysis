@@ -60,7 +60,7 @@ section{
   margin:auto;
 }
 
-/* CARDS */
+/* CARD */
 .card{
   background:var(--card);
   padding:1.6rem;
@@ -84,7 +84,11 @@ h2{
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 }
 
-/* VISUALIZATION CARDS */
+/* ===========================
+   VISUALIZATION FIX (CRITICAL)
+   =========================== */
+
+/* Visualization Card */
 .grid-2 > div{
   background:var(--card);
   border-radius:14px;
@@ -95,24 +99,26 @@ h2{
   gap:.6rem;
 }
 
+/* Visualization Title */
 .grid-2 h3{
-  font-size:1rem;
-  margin:.2rem 0 .4rem;
+  font-size:0.95rem;
+  margin:0;
   color:var(--accent);
   text-align:center;
 }
 
-/* IMAGE FIX */
+/* Dashboard Viewport */
 .grid-2 img{
   width:100%;
-  height:200px;
-  object-fit:contain;
+  height:160px;               /* FIXED & SMALL */
+  object-fit:cover;           /* CROPS WIDE DASHBOARDS */
+  object-position:top center; /* KEEPS KPIs VISIBLE */
   border-radius:10px;
   background:#020617;
-  padding:.5rem;
+  border:1px solid rgba(255,255,255,.08);
 }
 
-/* HOVER EFFECT */
+/* Hover polish */
 .grid-2 > div:hover{
   transform:translateY(-4px);
   transition:.25s ease;
@@ -140,17 +146,16 @@ ul{padding-left:1.2rem}
   <h1>Retail <span>Sales Analysis</span></h1>
   <p>
     A data analytics project focused on uncovering sales patterns, profit trends,
-    regional performance, and high-value customers to support data-driven retail decisions.
+    regional performance, and high-value customers to support data-driven decisions.
   </p>
 </section>
 
-<!-- BUSINESS UNDERSTANDING -->
+<!-- BUSINESS -->
 <section>
   <h2>🧠 Business Understanding</h2>
   <div class="card">
-    This project analyzes retail sales data to identify key performance drivers,
-    seasonal spikes, and profitability patterns across regions and customers.
-    The goal is to support strategic, data-driven decision-making.
+    This project analyzes retail sales data to uncover trends, profitability drivers,
+    and customer behavior patterns to support strategic business decisions.
   </div>
 </section>
 
@@ -160,25 +165,24 @@ ul{padding-left:1.2rem}
   <div class="card">
     <ul>
       <li>Identify monthly and quarterly sales spikes</li>
-      <li>Analyze profit trends over time</li>
-      <li>Evaluate regional performance</li>
+      <li>Analyze profit trends across regions</li>
+      <li>Evaluate high-performing states</li>
       <li>Identify top revenue-generating customers</li>
     </ul>
   </div>
 </section>
 
-<!-- DATA UNDERSTANDING -->
+<!-- DATA -->
 <section>
   <h2>📊 Data Understanding</h2>
   <div class="card">
-    The dataset contains transactional retail data including:
+    The dataset includes:
     <ul>
-      <li>Order and shipping dates</li>
-      <li>Customer and region details</li>
-      <li>Product categories and sub-categories</li>
-      <li>Sales, profit, and quantity metrics</li>
+      <li>Order & ship dates</li>
+      <li>Customer & region details</li>
+      <li>Product categories</li>
+      <li>Sales, profit & quantity</li>
     </ul>
-    This structure enables deep time-series, customer-level, and regional analysis.
   </div>
 </section>
 
@@ -195,40 +199,40 @@ ul{padding-left:1.2rem}
 
     <div>
       <h3>Regional Sales Analysis</h3>
-      <img src="images/RegionalSales.png" alt="Regional Sales Analysis">
+      <img src="images/RegionalSales.png" alt="Regional Sales">
     </div>
 
     <div>
       <h3>Himachal Analytics</h3>
-      <img src="images/HimanchalAnalytics.png" alt="Himachal Analytics Dashboard">
+      <img src="images/HimanchalAnalytics.png" alt="Himachal Analytics">
     </div>
 
     <div>
-      <h3>Top 10 Customers by Revenue</h3>
-      <img src="images/Top10customer.png" alt="Top 10 Customers">
+      <h3>Top 10 Customers</h3>
+      <img src="images/Top10customer.png" alt="Top Customers">
     </div>
 
     <div>
-      <h3>Sales Trends Over Time</h3>
+      <h3>Sales Trends</h3>
       <img src="images/salesTrends.png" alt="Sales Trends">
     </div>
 
     <div>
-      <h3>Payment Category Distribution</h3>
-      <img src="images/PaymentCategory.png" alt="Payment Category Analysis">
+      <h3>Payment Category</h3>
+      <img src="images/PaymentCategory.png" alt="Payment Category">
     </div>
 
   </div>
 </section>
 
-<!-- TECHNOLOGIES -->
+<!-- TECH -->
 <section>
   <h2>🧰 Technologies Used</h2>
   <div class="grid grid-2">
-    <div class="card">Power BI / Tableau<br><small>Data Visualization</small></div>
-    <div class="card">Excel / CSV<br><small>Data Storage & Cleaning</small></div>
-    <div class="card">Python (Pandas, NumPy, Matplotlib)<br><small>EDA & Analysis</small></div>
-    <div class="card">SQL<br><small>Querying & Data Extraction</small></div>
+    <div class="card">Power BI / Tableau</div>
+    <div class="card">Python (Pandas, NumPy)</div>
+    <div class="card">SQL</div>
+    <div class="card">Excel / CSV</div>
   </div>
 </section>
 
@@ -237,12 +241,11 @@ ul{padding-left:1.2rem}
   <h2>🧩 Approach</h2>
   <div class="card">
     <ul>
-      <li><strong>Data Collection:</strong> Retail transactional data</li>
-      <li><strong>Data Cleaning:</strong> Handling missing values & standardization</li>
-      <li><strong>Feature Engineering:</strong> Profit margins, quarters</li>
-      <li><strong>EDA:</strong> Trends, seasonality, spikes</li>
-      <li><strong>Visualization:</strong> Interactive dashboards</li>
-      <li><strong>Insights:</strong> Business-focused interpretation</li>
+      <li>Data collection & cleaning</li>
+      <li>Feature engineering</li>
+      <li>Exploratory analysis</li>
+      <li>Dashboard creation</li>
+      <li>Business insights</li>
     </ul>
   </div>
 </section>
@@ -252,9 +255,9 @@ ul{padding-left:1.2rem}
   <h2>🚀 Future Enhancements</h2>
   <div class="card">
     <ul>
-      <li>Customer segmentation models</li>
-      <li>Sales forecasting using time-series analysis</li>
-      <li>Inventory and demand optimization</li>
+      <li>Customer segmentation</li>
+      <li>Sales forecasting</li>
+      <li>Inventory optimization</li>
     </ul>
   </div>
 </section>
